@@ -13,6 +13,6 @@ int main() {
 			grid[r][c] = grid[r-1][c] + grid[r][c-1];
 		}
 	}
-
+        
 	cout << grid[size][size] << endl;
 }
