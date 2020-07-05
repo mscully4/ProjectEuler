@@ -3,10 +3,7 @@
 int main() {
 	using namespace std;
 
-	int first = 1;
-	int second = 2;
-	int fib = 0;
-	int sum = 2;
+	int first = 1, second = 2, fib = 0, sum = 2;
 	while (fib < 4000000) {
 		fib = first + second;
 		if (fib % 2 == 0) {
