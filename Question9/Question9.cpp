@@ -3,14 +3,13 @@
 
 int main () {
 	using namespace std;
-	int product = 0;
-	for (int i = 1; i < 500; i++) {
-		for (int z = 1; z < 500; z++) {
-			for (int x = 1; x < 500; x++) {
-				if (pow(i, 2) + pow(z, 2) == pow(x, 2)) {
-					if (i + z + x == 1000) {
-						cout << i * z * x << endl;
-						break;
+	for (int a = 1; a < 500; a++) {
+		for (int b = a; b < 500; b++) {
+			for (int c = b; c < 500; c++) {
+				if (pow(a, 2) + pow(b, 2) == pow(c, 2)) {
+					if (a + b + c == 1000) {
+						cout << a << " " << b << " " << c << " " << a * b * c << endl;
+						return 1;
 					}
 				}
 			}
